@@ -1,0 +1,1165 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1400px;
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #C0CCDA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+::-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+:root {
+  --main-bg-color: #23D3D3;
+  --main-heading-color:#1C2C40;
+}
+#home{
+	background: url("../images/slide-01.jpg");
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+}
+#home section.wrapper{
+	
+}
+#home header{
+	padding: 30px;
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+	
+}
+#home div.left{
+	
+}
+#home div.left h1{
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: .1em;
+}
+#home div.right {
+	display: flex;	
+}
+#home div.right ul{
+	display: flex;
+	align-items: center;
+}
+#home div.right ul li{
+	margin-right: 40px;
+}
+#home div.right ul li:last-child{
+	margin-right: 20px;
+}
+#home div.right ul li a{
+	color: #fff;
+	font-size: 18px;
+}
+#home div.right ul li a img{
+	width: 20px;
+	transform: rotate(90deg);
+	margin-left: 10px;
+}
+#home header div.right div{
+	background-color:#fff;
+	padding: 20px;
+}
+#home header div.right div img{
+	display: block;
+	width: 30px;	
+}
+#home div.down{
+	background: #5fb759;
+    width: 62px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+}
+#home div.down img{
+	   display: block;
+	   width: 100%;
+	   filter: invert(1);
+}
+
+
+
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    position: relative;
+}
+header h1.left {
+    width: 100px;
+}
+header h1.left a {
+    width: 100%;
+    display: block;
+}
+header h1.left a img {
+    width: 100%;
+    display: block;
+}
+header nav.menu {
+}
+header nav.menu ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+header nav.menu ul li {
+    margin-right: 35px;
+}
+header nav.menu ul li:last-child {
+    margin-right: 0;
+}
+header nav.menu ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+}
+#menu-icon {
+    display: none;
+    width: 35px;
+}
+#menu-icon img {
+    width: 100%;
+    display: block;
+}
+#mobile-menu {
+    /*display: none;*/
+}
+
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    background: #fff;
+    padding: 30px;
+    z-index: 2;
+    bottom: 0;
+    width: 280px;
+    padding-top: 40px;
+    transition: all 0.4s ease-in;
+}
+span.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+span.close {
+    position: fixed;
+    right: 285px;
+    top: 40px;
+    width: 32px;
+    height: 32px;
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+span.close img {
+    display: block;
+    width: 100%;
+}
+span.close.active {
+    display: block;
+}
+#mobile-menu.active {
+    right: 0;
+}
+span.overlay.active {
+    display: block;
+}
+#mobile-menu ul li {
+    margin-bottom: 20px;
+}
+#mobile-menu ul li:last-child {
+    margin-bottom: 0;
+}
+#mobile-menu ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    display: block;
+}
+@media all and (max-width: 980px) {
+    #menu-icon {
+        display: block;
+    }
+    span.close.active{
+        display: block;
+    }
+    header nav.menu {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+#spotlight{
+	padding-top: 100px;
+}
+#spotlight div.middle  h3{
+	color: #fff;
+	text-align: center;
+    position: relative;
+    top:110px;
+    font-weight: bold;
+}
+#spotlight div.middle p {
+	font-size: 60px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+    top: 120px;
+}
+#spotlight div.middle button.one{
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	font-weight: bold;
+	padding: 15px 40px;
+	position: relative;
+	top: 140px;
+	left: 40%;
+}
+#spotlight div.middle button.two{
+	background: #fff;
+	color: green;
+	font-weight: bold;
+	padding: 18px 40px;
+	border-radius: 30px;
+	position: relative;
+	top: 140px;
+	left: 43%;
+}
+#spotlight div.left{
+	position: absolute;
+	bottom: 50%;
+	top: 50%;
+}
+#spotlight div.right{
+	position: absolute;
+	left: 97%;
+	top: 50%;
+}
+#about{
+	padding: 50px 50px;
+}
+#about div.one{
+	display: flex;
+	width: 155%;
+}
+#about.wrapper{
+	
+}
+#about div.left{
+	margin-right: 92px;	
+}
+#about div.left span{
+	color: green;
+	margin-bottom: 20px;
+}
+#about div.left h3{
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+#about div.left ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+#about div.left ul li{
+	width: 48%;
+	display: flex;
+	margin-bottom: 40px;
+	align-items: center;
+}
+#about div.one a.button{
+	background-color: #5fb759;
+	color: #fff;
+	padding: 17px 33px;
+	border-radius: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+#about div.left ul li img{
+	display: block;
+	margin-right: 10px;
+
+}
+#about div.right{
+
+}
+#about div.right p{
+	color: #929292;	
+	width: 50%;
+	margin-top: 38px;
+}
+#about div.right p span{
+	color: var(--main-bg-color);
+}
+#about hr.line{
+	margin-top: 90px;
+    border-top: 5px solid #dbdada;
+}
+#startup{
+	padding: 40px 60px;
+}
+#startup ul{
+	display: flex;
+}
+#startup ul div{
+
+}
+#startup ul div img{
+	display: block;
+	margin-right: 20px;
+}
+#startup ul li{
+	
+}
+#startup ul li h5{
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+#startup ul li p{
+	color: #929292;
+	font-family: "GT-Eesti-Pro-Text-Medium.woff2";
+	width: 70%;
+}
+#startup ul li button{
+    font-weight: bold;
+    border: 1px dotted green;
+    padding: 8px 20px;
+}
+#subscribe{
+	padding: 50px;
+	background: url("../images/slide-02.jpg") no-repeat;
+	background-size: cover;
+}
+#subscribe h3{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 25px;
+}
+#subscribe h2{
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+#subscribe p{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#subscribe form input[type=email] {
+	padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 24px;
+    font-size: 15px;
+    position: relative;
+    right: -28%;
+    width: 25%;
+}
+#subscribe form input[type=submit] {
+	padding: 10px 33px;
+    color: lightgreen;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    right: -30%;
+}
+#projects{
+	padding: 150px 50px;
+}
+#projects .wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+#projects div.left{
+	
+}
+#projects div.left span{
+	color: #23D3D3;
+}
+#projects div.left h5{
+	color:#5fb759;
+}
+#projects div.left h2{
+	font-weight: 700;
+	font-size: 30px;
+	font-family: 'sans-serif';
+	margin-bottom: 30%;
+}
+#projects div.left ul{
+
+}
+#projects div.left ul li{
+	margin-bottom: 30px;
+	color:#929292;
+}
+#projects div.right{
+	
+}
+#projects div.right ul{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+#projects div.right ul li{
+	margin: 20px;
+}
+#projects div.right ul li img{
+	display: block;
+	width: 100%;
+}
+#digital{
+	padding: 100px;
+	background: url("../images/slide-03.jpg") no-repeat;
+	background-size: cover;
+}
+#digital .wrapper{
+
+}
+#digital h5{
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+#digital h2{
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-family: 'sans-serif';
+	margin-bottom: 50px;
+}
+#digital div.one{
+	display: flex;
+	justify-content: space-around;
+}
+#digital div.left{
+
+}
+#digital div.left img{
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+}
+#digital div.left h4{
+	text-align: center;
+	margin-top: 20px;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'GT-Eesti';
+}
+#digital div.left h6{
+	text-align: center;
+	margin-bottom: 15px;
+	color: #fff;
+	
+}
+#digital div .middle{
+
+}
+#digital div.middle img{
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+}
+#digital div.middle h4{
+	text-align: center;
+	margin-top: 20px;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'GT-Eesti';
+}
+#digital div.middle h6{
+	text-align: center;
+	margin-bottom: 15px;
+	color: #fff;
+}
+#digital div .right{
+	
+}
+#digital div.right img{
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+}
+#digital div.right h4{
+	text-align: center;
+	margin-top: 20px;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'GT-Eesti';
+}
+#digital div.right h6{
+	text-align: center;
+	margin-bottom: 15px;
+	color: #fff;
+}
+#contact{
+	padding: 100px;
+    background: url("../images/dotted-map-bg.png") no-repeat;
+    background-position: top;
+}
+#contact .wrapper{
+	display: flex;
+}
+#contact div.left{
+	
+}
+#contact h5{
+	color: lightgreen;
+}
+#contact h3{
+	font-size: 40px;
+	font-family: 'GT-Eesti';
+	width: 70%;
+	margin-bottom: 60px;
+}
+#contact ul{
+	
+}
+#contact ul li{
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+#contact ul li img {
+	margin-right: 15px;
+}
+#contact div.right{
+	margin-top: 60px;
+	width: 50%;
+}
+#contact div.right form{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#contact div.right form input[type=text]{
+	width: 47%;
+    padding: 12px 24px;
+    background: #fff;
+    font-size: 16px;
+    border: 1px solid #8a8a8a;
+	margin-bottom: 40px;
+
+}
+#contact div.right form textarea{
+	padding: 10px;
+    border:  1px solid #8a8a8a;
+    font-size: 16px;
+	width: 100%;
+	margin-bottom: 40px;
+	resize: none;
+}
+#contact div.right a.button{
+	background: rgb(62, 201, 62);
+	padding: 18px 28px;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+#footer{
+	padding:50px;
+	background: url("../images/banner-bg.jpg") no-repeat;
+	background-size: cover;
+}
+#footer.wrapper{
+	
+}
+#footer div.one{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+#footer div.left{
+	
+}
+#footer div.left h5{
+	color: #fff;
+	font-weight: bold;
+	
+}
+#footer div.right{
+	display: flex;
+	align-items: center;
+	
+}
+#footer div.right h5{
+	margin-right: 30px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+#footer div.right ul{
+	display: flex;
+}
+#footer div.right ul li{
+	margin-right: 10px;
+}
+#footer div.right ul li a{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	padding: 10px;
+	display: block;
+	border-radius: 30px;
+}
+#footer div.right ul li a img{
+	display: block;
+ 	width: 100%;
+	 height: 100%;
+}
+@media all and (max-width:1280px){
+	#home div.right{
+		display: none;
+	}
+	#home div.right ul{
+		display: none;
+	}
+	#digital div.one div {
+		margin-right: 15px;
+	}
+	#contact div.right form input[type=text] {
+		width: 100%;
+		padding: 6px 24px;
+		font-size: 14px;
+	}
+	#contact div.right form textarea {
+	    padding: 6px 19px;
+		font-size: 14px;
+	}
+	#projects div.left h2 {
+		font-size: 24px;
+	}
+	#projects div.left ul li {
+		font-size: 12px;
+	}
+}
+@media all and (max-width:980px){
+	#spotlight div.left {
+		display: none;
+	}
+	#spotlight div.right {
+		display: none;
+	}
+	#spotlight div.middle button.one {
+		position: relative;
+		left: 27%;
+		top: 25px;
+	}
+	#spotlight div.middle button.two {
+		position: relative;
+		left: 30%;
+		top: 25px;
+	}
+	#spotlight div.middle h3 {
+		position: relative;
+		top: 42%;
+		font-size: 20px;
+	}
+	#spotlight div.middle p{
+		position: relative;
+		top: 18px;
+    	font-size: 53px;	
+	}
+	#about {
+		padding: 50px 09;
+	}
+	#about div.left h3 {
+		font-size: 28px;
+	}
+	#about div.left ul {
+		flex-direction: column;
+	}
+	#about div.one a.button{
+		display: block;
+   		padding: 16px;
+	}
+	#startup ul {
+		flex-direction: column;
+	}
+	#startup ul li button{
+		margin-bottom: 20px;
+	}
+	#projects div.right ul  {
+		
+	}
+	#projects div.right {
+		display: flex;
+	}
+	#projects div.right ul li {
+		margin: 10px;
+		width: 45%;
+	}
+	#projects div.right{
+		width: 70%;
+	}
+	#projects div.left{
+		width: 30%;
+	}
+	#contact h3 {
+		font-size: 32px;
+	}
+	#contact div.right a.button{
+		display: block;
+		padding: 13px 3px;
+	}
+	#footer div.one{
+		flex-wrap: nowrap;
+	}
+	#footer div.right ul li a{
+		width: 40px;
+		height: 40px;
+	}
+	#footer div.right h5{
+		font-size: 13px;
+	}
+}
+@media all and (max-width:768px){
+	#spotlight div.middle button.one {
+		position: relative;
+		left: 27%;
+		top: 90px;
+	}
+	#spotlight div.middle button.two {
+		position: relative;
+		left: 30%;
+		top: 90px;
+	}
+	#spotlight div.middle p {
+		position: relative;
+		top: 54px;
+		font-size: 51px;
+	}
+	#spotlight div.middle h3 {
+		position: relative;
+		top: 32px;
+		font-size: 20px;
+	}
+	#about div.left ul li{
+		margin-bottom: 33px;
+	}
+	#about div.right {
+		width: 160%;
+	}
+	#about div.left h3 {
+		font-size: 25px;
+		width: 125%;
+	}
+	#subscribe h3 {
+		font-size: 17px;
+	}
+	#subscribe h2 {
+		font-size: 24px;
+	}
+	#subscribe form input[type=email] {
+		position: relative;
+		right: -18%;
+		width: 34%;
+	}
+	#subscribe form input[type=submit] {
+		position: relative;
+		right: -22%;
+		padding: 9px 33px;
+	}
+	#projects {
+		padding: 150px 0;
+	}
+	#projects div.right{
+		width: 86%;
+	}
+	#projects div.left{
+		width: 30%;
+	}
+	#contact div.right a.button {
+		display: block;
+		padding: 5px;
+	}
+	#footer div.left h5{
+		font-size: 11px;
+	}
+	#footer div.right ul li a{
+		width: 34px;
+		height: 34px;
+	}
+	
+}
+@media all and (max-width:640px){
+	#home div.left h1{
+		font-size: 30px;
+	}
+	#spotlight div.middle h3 {
+		position: relative;
+		top: 32px;
+		font-size: 17px;
+	}
+	#spotlight div.middle p {
+		position: relative;
+		top: 54px;
+		font-size: 37px;
+	}
+	#spotlight div.middle button.one {
+		position: relative;
+		left: 17%;
+		top: 79px;
+		padding: 12px 30px;
+		margin-right: 8px;
+	}
+	#spotlight div.middle button.two {
+		position: relative;
+		left: 17%;
+		top: 79px;
+		padding: 14px 30px;
+	}
+	#home div.down {
+		position: absolute;
+		bottom: -30px;
+		left: 44%;
+		width: 56px;
+		height: 55px;
+	}
+	#about div.left span{
+		font-size: 12px;
+	}
+	#about div.one{
+		flex-wrap: wrap;
+	}
+	#about div.one a.button{
+		width: 45%;
+	}
+	#projects {
+		padding: 35px;
+	}
+	#projects .wrapper{
+		flex-wrap: wrap;
+	}
+	#projects div.left span{
+		font-size: 14px;
+	}
+	#projects div.left {
+		width: 100%;
+	}
+	#projects div.left h2{
+		margin-bottom: 40px;
+	}
+	#projects div.right ul li{
+		width: 43%;
+	}
+	#digital{
+		padding: 50px;
+	}
+	#digital h2{
+		font-size: 26px;
+	}
+	#digital div.left h4 {
+		font-size: 10px;
+		margin-top: 10px;
+	}
+	#digital div.middle h4 {
+		font-size: 10px;
+		margin-top: 10px;
+	}
+	#digital div.right h4 {
+		font-size: 10px;
+		margin-top: 10px;
+	}
+	#digital div.left h6{
+		font-size: 10px;
+	}
+	#digital div.middle h6{
+		font-size: 10px;
+	}
+	#digital div.right h6{
+		font-size: 10px;
+	}
+	#subscribe form input[type=email] {
+		position: relative;
+		right: -6%;
+		width: 80%;
+		margin-bottom: 14px;
+	}
+	#contact{
+		padding: 40px;
+	}
+	#contact .wrapper{
+		flex-wrap: wrap;
+	}
+	#contact div.left{
+		width: 100%;
+	}
+	#contact div.right {
+		margin-bottom: 20px;
+		flex-wrap: nowrap;
+	}
+	#contact div.right{
+		width: 100%;
+	}
+	#contact div.right a.button{
+		width: 48%;
+		padding: 10px 8px;
+	}
+	#contact h3 {
+		margin-bottom: 40px;
+	}
+	#footer div.right h5{
+		margin-right: 10px;
+	}
+	#footer{
+		padding: 30px;
+	}
+	#footer div.right ul li a {
+		width: 30px;
+		height: 30px;
+	}
+	#footer div.right h5{
+		font-size: 10px;
+	}
+	#startup ul li p{
+		width: 100%;
+	}
+
+}
+@media all and (max-width:480px){
+	#home div.left h1 {
+		font-size: 22px;
+	}
+	#spotlight div.middle h3 {
+		position: relative;
+		top: -5px;
+		font-size: 16px;
+	}
+	#spotlight div.middle p {
+		position: relative;
+		top: 20px;
+		font-size: 35px;
+	}
+	#spotlight div.middle button.one {
+		position: relative;
+		left: 16%;
+		top: 67px;
+		padding: 6px 21px;
+		font-size: 11px;
+	}
+	#spotlight div.middle button.two {
+		position: relative;
+		left: 16%;
+		top: 67px;
+		padding: 8px 21px;
+		font-size: 11px;
+	}
+	#home div.down {
+		position: absolute;
+		bottom: -24px;
+		left: 39%;
+		width: 44px;
+		height: 44px;
+		padding: 12px;
+	}
+	#about div.left h3 {
+		font-size: 17px;
+		width: 100%;
+	}
+	#about div.left ul li {
+		margin-bottom: 28px;
+		font-size: 11px;
+	}
+	#about div.one a.button {
+		width: 65%;
+		padding: 10px;
+		font-size: 13px;
+	}
+	#about div.right p {
+		width: 70%;
+		font-size: 13px;
+	}
+	#about hr.line{
+		margin-top: 40px;
+	}
+	#startup {
+		padding: 0 25px;
+	}
+	#subscribe form input[type=submit]{
+		right: -12%;
+   		padding: 6px 23px;
+	}
+	#projects div.right ul li {
+		width: 41%;
+	}	
+	#digital h2 {
+		font-size: 21px;
+		margin-bottom: 22px;
+	}
+	#contact div.right a.button {
+		width: 70%;
+	}
+	#footer div.right ul li a{
+		width: 34px;
+		height: 34px;
+	}
+	#footer div.right{
+
+	}
+	#footer div.left{
+
+	}
+	#footer div.one{
+		flex-wrap: wrap;
+	}
+}
+@media all and (max-width:360px){
+	#home div.down {	
+		left: 42%;
+	}
+	#subscribe form input[type=submit] {
+		right: -9%;
+		padding: 2px 17px;
+	}
+	#projects div.right {
+		width: 100%;
+	}
+	#contact div.right a.button {
+		width: 78%;
+	}	
+}
+@media all and (max-width:320px){
+	
+}
+
+
+
+
+
+
+
